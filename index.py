@@ -8,7 +8,7 @@ name = os.getenv('instauser')
 L = instaloader.Instaloader()
 for post in instaloader.Profile.from_username(L.context, name).get_posts():
     # post is an instance of instaloader.Post
-    L.download_post(post, target='#cliffs')
+    L.download_post(post, target='#profile')
 import argparse
 import osste
 from walkdir import filtered_walk
